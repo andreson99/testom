@@ -27,26 +27,31 @@
       color: #666;
       line-height: 1.6;
     }
-    .download-button {
-      display: block;
-      width: 200px;
-      margin: 20px auto;
-      padding: 10px;
+    .download-container {
       text-align: center;
+      margin-top: 20px;
+    }
+    .download-button {
+      display: inline-block;
+      padding: 10px 20px;
       background-color: #007bff;
       color: #fff;
       border: none;
       border-radius: 5px;
       text-decoration: none;
       font-size: 18px;
+      margin-right: 20px;
     }
     .download-button:hover {
       background-color: #0056b3;
     }
     .download-image {
-      display: block;
-      margin: 0 auto;
-      width: 200px;
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      background-image: url('download_icon.png');
+      background-size: cover;
+      vertical-align: middle;
     }
   </style>
 </head>
@@ -54,9 +59,10 @@
   <div class="container">
     <h1>Welcome to My GitHub Page</h1>
     <p>Hello there! Thank you for visiting my GitHub Pages site. This is where I showcase my projects, ideas, and more.</p>
-    <p>Feel free to download my APK:</p>
-    <a href="link_to_your_apk_file.apk" class="download-button">Download APK</a>
-    <img src="download_icon.png" alt="Download Icon" class="download-image">
+    <div class="download-container">
+      <a href="link_to_your_apk_file.apk" class="download-button">Download APK</a>
+      <div class="download-image"></div>
+    </div>
     <!-- Replace 'link_to_your_apk_file.apk' with the actual link to your APK file -->
     <!-- Replace 'download_icon.png' with the actual path to your download icon -->
     <p>If you have any questions or suggestions, don't hesitate to <a href="#">contact me</a>.</p>
